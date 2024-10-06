@@ -1,0 +1,74 @@
+body {
+  background-image: radial-gradient(circle, rgb(0, 0, 0), rgb(1, 41, 172), rgb(179, 0, 155));
+  background-size: 150px 150px;
+}
+h1 {
+  color: orange;
+}
+#remaining-question-count {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:larger;
+  border: 1px solid blanchedalmond;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width:fit-content;
+  text-align: center;
+  margin: 10px auto;
+  color: darksalmon;
+  background-color: rgba(100, 25, 30, 20)
+}
+.content {
+  padding: 10px;
+  background-color: darkslategrey;
+  border: 1px solid blanchedalmond;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 10px auto;
+}
+.current-question {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: larger;
+}
+.current-choices {
+  color: darkblue;
+  font-size: large;
+  padding: 5px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.current-choices:hover {
+  color: rgb(10, 10, 43);
+}
+.next-question-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.next-question-button:not(:disabled) {
+  cursor: pointer;
+  
+  background-color:cadetblue;
+  color: #fff;
+}
+.next-question-button:not(:disabled):hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #ccc;
+  color: darkblue;
+}
+.correct {
+  background-color: green;
+}
+.incorrect {
+  background-color: red;
+}
